@@ -73,10 +73,20 @@ width:45%;
     font-size: 3.1rem;
    
 }
-
-.rightSection{
-    /* background-color: brown; */
+.leftSection .buttons{
+    padding: 50px 0;
 }
+.leftSection .btn{
+    padding:12px;
+    background-color: #1e2167;
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor:pointer;
+    color:white;
+    font-size: 20px;
+}
+
+
 .rightSection img{
  
     width:80%;
@@ -203,8 +213,15 @@ footer .footer-text-center{
             <div class="leftSection">
                Hi, My name is <span class="purple">Aniket Rana</span>
                <div>and I am a passionate </div>
-    
                <span id="element"></span>
+
+               <div class="buttons">
+
+                <button class="btn">Download resume</button>
+                <button class="btn">Vist Github</button>
+               </div>
+    
+            
             
             
             </div>
@@ -360,12 +377,12 @@ footer .footer-text-center{
    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
    <!-- TYPESCRIPT CDN -->
 <!-- Typescript animation -->
-    <!-- <script>
+    <script>
         var typed = new Typed('#element', {
           strings: ['Web Developer', 'Front-end Developer','Full-Stack Web Developer'],
           typeSpeed: 50,
         });
-      </script> -->
+      </script>
 
 <!-- Typescript animation -->
  
