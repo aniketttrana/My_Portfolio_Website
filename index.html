@@ -159,8 +159,65 @@ color:grey;
 }
 /* secondSection css completed */
 
+/* thirdSection css start */
+
+/* thirdSection css complete */
+.thirdSection{
+max-width:80vw;
+margin: auto;
+/* giving this section height */
+height:90vh;
+padding-bottom: 50px;
+}
+
+/* Third Section css Start */
+.thirdSection h1{
+    font-size: 1.9rem;
+}
+
+.container{
+    width:1170px;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    /* next elements will come below */
+    justify-content: space-around;
+}
+.thirdSection img {
+    height:10px;
+    width:20px;
+}
+.training-items{
+    flex-basis: 23%;
+    margin:10px 0;
+    background-color: #181123;
+    box-shadow: 0px 0px 10px 3px lightgray;
+    text-align: center;
+    padding:20px 0;
+}
+
+.training-items h3{
+    padding:10px 0;
+}
+.training-items p{
+   font-size: 14px;
+   padding:10px;
+}
+.training-items button{
+    padding:10px 15px;
+    background-color: #26263b;
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor:pointer;
+    color:white;
+    font-size: 20px;
+    margin:5px 0;
+}
 
 
+ .training-items:hover h3{
+    font-size: 2.1rem;
+} 
 /* footer css start */
 
 footer{
@@ -186,7 +243,16 @@ footer .footer-text-center{
     padding:12px 0;
 }
 /* footer css end */
+@media only screen and (min-width:200px) and (max-width:767px) {
 
+    .container{
+        width:100%;
+        flex-direction: column;
+    }
+    .training-items{
+        margin:10px;
+    }
+}
 
     </style>
 </head>
@@ -217,8 +283,10 @@ footer .footer-text-center{
 
                <div class="buttons">
 
-                <button class="btn">Download resume</button>
-                <button class="btn">Vist Github</button>
+                <a href="my_cv.pdf" download="my_cv.pdf">
+                    <button class="btn">Download Resume</button>
+                </a>
+                <button class="btn" onClick="window.open('https://github.com/aniketttrana/', '_blank')">Visit GitHub</button>
                </div>
     
             
@@ -307,22 +375,50 @@ footer .footer-text-center{
     
     </div>
     <!-- FIFTH Project done -->
-
-
-
 </div>
-
-
-
-
-
-
 </div>
+<hr>
 <!-- secondSection completed-->
 
+<!-- ThirdSection Start -->
 
+<div class="thirdSection">
 
-    </main>
+<span class="text-grey">What projects I have done so far</span>
+<h1>My Projects</h1>
+
+<div class="container">
+
+    <div class="training-items">
+        <img src="developer.png" alt="image">
+        <h3>Weather App</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, alias!</p>
+        <button>VIEW</button>
+    </div>
+<!-- next card -->
+
+<div class="training-items">
+    <img src="developer.png" alt="image">
+    <h3>Weather App</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, alias!</p>
+    <button>VIEW</button>
+</div>
+
+<!-- next card -->
+<div class="training-items">
+    <img src="developer.png" alt="image">
+    <h3>Weather App</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, alias!</p>
+    <button>VIEW</button>
+</div>
+
+<!-- next card -->
+</div>
+
+</div>
+<!-- Thirs Section Complete -->
+
+</main>
 
 <!-- FOOTER SECTION START-->
 <footer>
