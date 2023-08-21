@@ -30,6 +30,9 @@ body{
     font-family: 'Poppins' , sans-serif;
     color:white;
 }
+/* added */
+
+/* added */
 nav{
     display:flex;
     justify-content: space-around;
@@ -88,7 +91,9 @@ nav ul li a:hover{
 .fa-linkedin{
     color:#0e76a8 ;
 }
-
+.leftSection a {
+    text-decoration: none;
+}
 
 .firstSection >div{
     /* only first div will get 30% */
@@ -142,7 +147,7 @@ width:45%;
 max-width:80vw;
 margin: auto;
 /* giving this section height */
-height:80vh;
+height:100vh;
 }
 
 .secondSection h1{
@@ -208,7 +213,7 @@ color:grey;
 max-width:80vw;
 margin: auto;
 /* giving this section height */
-height:90vh;
+height:200vh;
 padding-bottom: 50px;
 }
 
@@ -220,7 +225,9 @@ padding-bottom: 50px;
 .container{
     width:1170px;
     margin:auto;
+   gap: 20px;
     display:flex;
+    flex-direction: row;
     flex-wrap: wrap;
     /* next elements will come below */
     justify-content: space-around;
@@ -232,6 +239,9 @@ padding-bottom: 50px;
 }
 .training-items{
     flex-basis: 23%;
+    width: 250px; /* Set a fixed width for the cards */
+    height: 400px; /* Set a fixed height for the cards */
+    margin: 10px; /* Add margin for spacing */
     margin:10px 0;
     background-color: #181123;
     box-shadow: 0px 0px 10px 3px lightgray;
@@ -267,6 +277,105 @@ padding-bottom: 50px;
     font-size: 2.1rem;
   
 } 
+
+/* FOrthSection css start */
+.forthSection{
+    max-width:90vw;
+margin: auto;
+/* giving this section height */
+height:300vh;
+/* padding-bottom: 50px; */
+}
+ 
+    .inner{
+padding-top: 20px;
+    }
+.header{
+    text-align: center;
+    color: #0e76a8;
+    padding: 1rem;
+    position: relative;
+}
+.header:after{
+    /* after header line effect */
+content: '';
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+height: 4px;
+width: 100px;
+background-color: blue;
+
+}
+
+
+.container{
+    padding: auto;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1 rem 80px;
+    font-size: 1.2rem;
+}
+.skill-box{
+    flex: 0 0 calc(25% - 20px); 
+    padding: 1rem;
+    color: aqua;
+    cursor: pointer;
+    margin:10px;
+}
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom:0.5rem ;
+    position: relative;
+
+}
+.skill-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+   right: 50%;
+   width: 35px;
+   height: 4px;
+   border-radius: 2px 0 0 2px;
+   background-color: #1e2167;
+
+
+
+}
+.skill-title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+   left: 50%;
+   width: 35px;
+   height: 4px;
+   border-radius: 0 2px 2px 0;
+   background-color: #1e2167;
+}
+
+.skill
+.skill-title h3{
+    color: #26263b;
+    margin: 0.5rem;
+}
+
+.skill-icon{
+    width: 86px;
+}
+
+
+/* Forth Section css end */
+
+
+
+
+
 /* footer css start */
 
 footer{
@@ -277,6 +386,7 @@ footer{
     display:flex;
     padding:50px 30px;
     justify-content: space-evenly;
+    
 }
 
 .footer ul{
@@ -301,6 +411,13 @@ footer .footer-text-center{
     .training-items{
         margin:10px;
     }
+    .skills-area {
+    padding: 0 5%;
+  }
+
+  /* adding */
+
+  /* adding */
 }
 
     </style>
@@ -338,10 +455,18 @@ footer .footer-text-center{
                 <button class="btn" onClick="window.open('https://github.com/aniketttrana/', '_blank')">Visit GitHub</button>
                </div>
                <!-- added font awesome cdn -->
-               <i class="fa-brands fa-linkedin"></i>
+               <!-- <i class="fa-brands fa-linkedin"></i>
                <i class="fa-brands fa-instagram"></i>
-               <i class="fa-brands fa-github"></i>
-            
+               <i class="fa-brands fa-github"></i> -->
+               <a href="https://www.linkedin.com/in/anikettrana" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/aniketranas" target="blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/aniketttrana" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
             
             
             </div>
@@ -470,7 +595,59 @@ footer .footer-text-center{
 </div>
 
 </div>
-<!-- Thirs Section Complete -->
+<!-- Third Section Complete -->
+
+<hr>
+<!-- ForthSection Started -->
+
+<div class="forthSection">
+  <div class="inner">
+    <div class="header">
+<h1>MY SKILLS</h1>
+  </div>
+<div class="container">
+    <div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="html.png" class="skill-icon"></div>
+<h3>HTML 5</h3></div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, est?</p></div>
+
+
+
+
+
+<!-- next skill -->
+
+    <div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="css.png" class="skill-icon"></div>
+<h3>CSS</h3></div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, est?</p></div>
+
+<!-- next skill -->
+
+<!-- next skill -->
+
+    <div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="javascript.png" class="skill-icon"></div>
+<h3>Bootstrap</h3></div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, est?</p></div>
+
+<!-- next skill -->
+
+<!-- next skill -->
+
+    <div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="express.png" class="skill-icon"></div>
+<h3>Javascript</h3></div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, est?</p></div>
+
+<!-- next skill -->
+
+<!-- next skill -->
+
+    <div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="node.png" class="skill-icon"></div>
+<h3>Nodejs</h3></div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, est?</p></div>
+
+<!-- next skill -->
+  </div>
+<!-- Forth Section Completed -->
+
 
 </main>
 
