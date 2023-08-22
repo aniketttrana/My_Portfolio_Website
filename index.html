@@ -153,7 +153,7 @@ width:45%;
 max-width:95vw;
 margin: auto;
 /* giving this section height */
-height:100vh;
+height:110vh;
 }
 
 .secondSection h1{
@@ -185,7 +185,7 @@ display: flex;
     height:93px;
     width:1px;
     background-color: rgb(6, 177, 120);
-  margin:0 95px;
+  margin:0 8vw;
 }
 
 
@@ -201,13 +201,13 @@ display: flex;
 position: relative;
 top:75px;
 width:150px;
-font-size: 20px;
+font-size: 24px;
 }
 .vertical-desc{
     position: relative;
 top:75px;
 width:150px;
-font-size: 13px;
+font-size: 20px;
 color:grey;
 }
 /* secondSection css completed */
@@ -414,12 +414,24 @@ footer{
     justify-content: space-evenly;
     background-color: #181123;
    
+   position: relative;
     
 }
 
-
+.footer h3{
+    left:-121px;
+    font-size: 2.2rem;
+    position: relative;
+}
 .footer ul{
     list-style: none;
+    font-size: 1.5rem;
+   
+
+}
+.footer p{
+    
+    font-size: 1.5rem;
    
 
 }
@@ -458,10 +470,27 @@ footer ul li a{
   /* adding */
 }
 
-@media screen and (max-width:2000px) {
+@media screen and (max-width:1200px) {
   
+    .rightSection{
+        width:321px !important;
+    }
     .firstSection{
         flex-direction: column-reverse;
+        width:107%;
+    }
+    .footer h3{
+    left:-80px;
+    font-size: 2.2rem;
+    position: relative;
+}
+    /* .secondSection{
+        display: flex;
+        flex-direction: coloumn;
+        align-items: center;
+    } */
+    body{
+        min-width: fit-content;
     }
     .box{
         flex-direction: column;
@@ -469,8 +498,14 @@ footer ul li a{
     .secondSection .vertical{
         height:unset;
     }
-    .vertical-title,.vertical-desc{
-        left:45px;
+    .vertical-title{
+        left:60px;
+        margin-top: 20px;
+    }
+
+    .vertical-desc{
+        left:60px;
+        margin-top: 14px;
     }
    
     .secondSection .box{
@@ -479,18 +514,43 @@ footer ul li a{
     nav{
         flex-direction: column;
     }
+
+.leftSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+/*  */
+.container{
+        width:100%;
+        flex-direction: column;
+    }
+    .training-items{
+        margin:10px;
+    }
+    .skills-area {
+    padding: 0 5%;
+  }
+
+/*  */
+
     .secondSection{
-        height: 124vh;
+        height: 253vh;
+        /* max-width: 86vw; */
+        width:50%;
     }
     .thirdSection{
-       height: 100vh;
+       height: 205vh;
     }
     .forthSection{
-        height: 100vh;
+        height: 180vh;
 
     }
     .fifthSection{
-    height: 100vh;
+    height: 146vh;
+    
     }
 }
 
@@ -522,7 +582,7 @@ footer ul li a{
         <section id="Home">
         <section class="firstSection">
             <div class="leftSection">
-               Hi, My name is <span class="purple">Aniket Rana</span>
+               <div>Hi, My name is <span class="purple">Aniket Rana</span></div>
                <div>and I am a passionate </div>
                <span id="element"></span>
 
@@ -786,8 +846,8 @@ footer ul li a{
 <p>My name is Aniket Rana . I am from Himachal Pradesh</p>
         </div>
  
-
                 <ul>
+                    
                     <li><a href="#Home">Home</a></li>
                    
                        <li><a href="#Education">Education</a></li>
@@ -795,8 +855,9 @@ footer ul li a{
                        <li><a href="#Skills">Skills</a></li>
                        <li><a href="#Profiles">Profiles</a></li>
                        <li><a href="#Footer">About</a></li>
-                       
+                   
                    </ul>
+             
                         </div>
         </div>
 
