@@ -34,8 +34,7 @@ body{
 
 /* added */
 nav{
-    display:flex;
-    
+    display:flex;    
     justify-content: space-around;
     align-items: center;
     height:100px;
@@ -43,8 +42,7 @@ nav{
 }
 nav ul{
     display: flex;
-    justify-content: center;
-   
+    justify-content: center;   
 }
 nav ul li{
     list-style: none;
@@ -153,7 +151,7 @@ width:45%;
 max-width:95vw;
 margin: auto;
 /* giving this section height */
-height:59vh;
+height:110vh;
 }
 
 .secondSection h1{
@@ -219,7 +217,7 @@ color:grey;
 max-width:95vw;
 margin: auto;
 /* giving this section height */
-height:59vh;
+height:110vh;
 padding-bottom: 50px;
 }
 
@@ -289,7 +287,7 @@ padding-bottom: 50px;
     max-width:95vw;
 margin: auto;
 /* giving this section height */
-height:51vh;
+height:110vh;
 /* padding-bottom: 50px; */
 }
  
@@ -394,7 +392,7 @@ background-color: blue;
     max-width:95vw;
 margin: auto;
 /* giving this section height */
-height: 34vh;
+height: 80vh;
 padding-bottom: 50px;
 }
 
@@ -465,12 +463,9 @@ footer ul li a{
     padding: 0 5%;
   }
 
-  /* adding */
-
-  /* adding */
 }
 
-@media screen and (max-width:1200px) {
+@media screen  and (max-width:1200px)  {
   
     .rightSection{
         width:321px !important;
@@ -478,7 +473,6 @@ footer ul li a{
     .firstSection{
         flex-direction: column-reverse;
         width:107%;
-        
     }
     .footer h3{
     left:-80px;
@@ -506,7 +500,7 @@ footer ul li a{
 
     .vertical-desc{
         left:60px;
-        margin-top: 14px;
+        margin-top: 10px;
     }
    
     .secondSection .box{
@@ -538,12 +532,12 @@ footer ul li a{
 /*  */
 
     .secondSection{
-        height: 159vh;
+        height: 210vh;
         /* max-width: 86vw; */
         width:50%;
     }
     .thirdSection{
-       height: 129vh;
+       height: 150vh;
     }
     .forthSection{
         height: 114vh;
@@ -554,6 +548,73 @@ footer ul li a{
     
     }
 }
+
+/*  */
+@media (max-width:360px){
+    .secondSection{
+        height:260vh;
+    }
+    .thirdSection{
+        
+            height:210vh;
+    }
+    .forthSection{
+        height:185vh;
+    }
+    .fifthSection{
+        height:140vh;
+    }
+    .footer h3{
+        left:-55px;
+    }
+}
+
+
+/*  */
+
+@media (max-width: 600px) {
+    /* Mobiles */
+    .secondSection{
+        height:200vh;
+    }
+    .thirdSection{
+        
+            height:180vh;
+    }
+    .forthSection{
+        height:145vh;
+    }
+    .fifthSection{
+        height:111vh;
+    }
+    .footer h3{
+        left:-55px;
+    }
+}
+
+
+/*  */
+@media (min-width: 601px) and (max-width: 1200px) {
+    /* tablets */
+
+    .secondSection{
+        height:200vh;
+    }
+    .thirdSection{
+        
+            height:180vh;
+    }
+    .forthSection{
+        height:145vh;
+    }
+    .fifthSection{
+        height:111vh;
+    }
+    .footer h3{
+        left:-55px;
+    }
+}
+/*  */
 
     </style>
 </head>
