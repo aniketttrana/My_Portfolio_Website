@@ -35,6 +35,7 @@ body{
 /* added */
 nav{
     display:flex;
+    
     justify-content: space-around;
     align-items: center;
     height:100px;
@@ -455,6 +456,42 @@ footer ul li a{
   /* adding */
 
   /* adding */
+}
+
+@media screen and (max-width:2000px) {
+  
+    .firstSection{
+        flex-direction: column-reverse;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .secondSection .vertical{
+        height:unset;
+    }
+    .vertical-title,.vertical-desc{
+        left:45px;
+    }
+   
+    .secondSection .box{
+        width:50vw;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .secondSection{
+        height: 124vh;
+    }
+    .thirdSection{
+       height: 100vh;
+    }
+    .forthSection{
+        height: 100vh;
+
+    }
+    .fifthSection{
+    height: 100vh;
+    }
 }
 
     </style>
