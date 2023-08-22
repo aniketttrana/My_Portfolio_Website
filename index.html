@@ -105,7 +105,7 @@ width:45%;
     font-size: 3.1rem;
    
 }
-.leftSection .buttons{
+.leftSection .buttons,.fifthSection .btn  {
     padding: 50px 0;
 }
 .leftSection .buttons .btn:hover{
@@ -113,7 +113,12 @@ width:45%;
   0 0 25px cyan, 0 0 50px  cyan,
   0 0 100px cyan, 0 0 200px cyan;
 }
-.leftSection .btn{
+.fifthSection .btn:hover{
+    box-shadow: 0 0 5px  cyan,
+  0 0 25px cyan, 0 0 50px  cyan,
+  0 0 100px cyan, 0 0 200px cyan;
+}
+.leftSection .btn,.fifthSection .btn{
     padding:12px;
     background-color: #1e2167;
     border: 2px solid white;
@@ -144,7 +149,7 @@ width:45%;
 /* secondSection css started */
 
 .secondSection{
-max-width:80vw;
+max-width:95vw;
 margin: auto;
 /* giving this section height */
 height:100vh;
@@ -210,10 +215,10 @@ color:grey;
 
 /* thirdSection css complete */
 .thirdSection{
-max-width:80vw;
+max-width:95vw;
 margin: auto;
 /* giving this section height */
-height:200vh;
+height:100vh;
 padding-bottom: 50px;
 }
 
@@ -224,8 +229,9 @@ padding-bottom: 50px;
 
 .container{
     width:1170px;
-    margin:auto;
-   gap: 20px;
+    /* margin:auto; */
+    margin-top: 30px;
+   gap: 30px;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -242,12 +248,11 @@ padding-bottom: 50px;
     width: 250px; /* Set a fixed width for the cards */
     height: 400px; /* Set a fixed height for the cards */
     margin: 10px; /* Add margin for spacing */
-    margin:10px 0;
+    margin:31px 0;
     background-color: #181123;
     box-shadow: 0px 0px 10px 3px lightgray;
-   
     text-align: center;
-    padding:20px 0;
+    padding:28px 0;
 }
 
 .training-items h3{
@@ -280,10 +285,10 @@ padding-bottom: 50px;
 
 /* FOrthSection css start */
 .forthSection{
-    max-width:90vw;
+    max-width:95vw;
 margin: auto;
 /* giving this section height */
-height:300vh;
+height:100vh;
 /* padding-bottom: 50px; */
 }
  
@@ -295,6 +300,7 @@ padding-top: 20px;
     color: #0e76a8;
     padding: 1rem;
     position: relative;
+    
 }
 .header:after{
     /* after header line effect */
@@ -318,13 +324,16 @@ background-color: blue;
     text-align: center;
     padding: 1 rem 80px;
     font-size: 1.2rem;
+   
 }
 .skill-box{
     flex: 0 0 calc(25% - 20px); 
     padding: 1rem;
+ 
     color: aqua;
     cursor: pointer;
     margin:10px;
+    align-items: center;
 }
 .skill-title{
 
@@ -334,6 +343,7 @@ background-color: blue;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
     position: relative;
+    
 
 }
 .skill-title:after{
@@ -358,17 +368,21 @@ background-color: blue;
    height: 4px;
    border-radius: 0 2px 2px 0;
    background-color: #1e2167;
+   
 }
 
-.skill
+
 .skill-title h3{
     color: #26263b;
     margin: 0.5rem;
+    
 }
 
 .skill-icon{
     width: 86px;
+   
 }
+
 
 
 /* Forth Section css end */
@@ -376,10 +390,10 @@ background-color: blue;
 
 /* fifth section css start */
 .fifthSection{
-    max-width:100vw;
+    max-width:95vw;
 margin: auto;
 /* giving this section height */
-height: 80vh;
+height: 68vh;
 padding-bottom: 50px;
 }
 
@@ -391,25 +405,38 @@ padding-bottom: 50px;
 footer{
     background-color: #181123;
    
+   
 }
-.footer{
+.footer {
     display:flex;
     padding:50px 30px;
     justify-content: space-evenly;
+    background-color: #181123;
+   
     
 }
 
+
 .footer ul{
     list-style: none;
+   
+
 }
 .footer >div{
+  
     width:123px;
+    
 }
 
 footer .footer-text-center{
-    text-align: center;
+   
     color: grey;
-    padding:12px 0;
+    padding:20px 0;
+    text-align: center;
+}
+footer ul li a{
+   text-decoration: none;
+   color: white;
 }
 /* footer css end */
 @media only screen and (min-width:200px) and (max-width:767px) {
@@ -441,16 +468,21 @@ footer .footer-text-center{
 </div>
 <div class="right"></div>
 <ul>
- <li><a href="/"></a></li>
+ <li><a href="#Home">Home</a></li>
 
-    <li><a href="/">About</a></li>
-    <li><a href="/">Services</a></li>
-    <li><a href="/">Contact Me</a></li>
+    <li><a href="#Education">Education</a></li>
+    <li><a href="#Projects">Projects</a></li>
+    <li><a href="#Skills">Skills</a></li>
+    <li><a href="#Profiles">Profiles</a></li>
+    <li><a href="#Footer">About</a></li>
+    
 </ul>
         </nav>
     </header>
 
     <main>
+
+        <section id="Home">
         <section class="firstSection">
             <div class="leftSection">
                Hi, My name is <span class="purple">Aniket Rana</span>
@@ -487,7 +519,14 @@ footer .footer-text-center{
            
         </section>
 <hr>
+
+
+</section>
 <!-- secondSection started-->
+
+<section id="Education">
+
+
 <div class="secondSection">
 
 <span class="text-grey">Here is my education details</span>
@@ -560,10 +599,12 @@ footer .footer-text-center{
 </div>
 </div>
 <hr>
+
+</section>
 <!-- secondSection completed-->
 
 <!-- ThirdSection Start -->
-
+<section id="Projects">
 <div class="thirdSection">
 
 <span class="text-grey">What projects I have done so far</span>
@@ -574,7 +615,7 @@ footer .footer-text-center{
     <div class="training-items">
         <img src="weatherapp.png" alt="image">
         <h3>Weather App</h3>
-        <p>Users can see their city or country weather data by simply enter their city names in the search bar</p>
+        <p>Users can see their city or country weather data by simply enter their city names in the search bar. This project is created using Html,css,javascript,Weather Api</p>
         <button class="btnG" onClick="window.open('https://github.com/aniketttrana/weatherapp.git/','_blank')">Github</button>
       
         <button class="btnL" onClick="window.open('https://aniketttrana.github.io/weatherapp/','_blank')">Live</button>
@@ -587,16 +628,16 @@ footer .footer-text-center{
      <img src="textutility.png" alt="image">
         <h3>Text-Utility</h3>
         <p>Users can change text to Uppercase lower case, can remove special characters , can listen to their text , see their speed of reading!</p>
-        <button class="btnG" onClick="window.open('https://github.com/aniketttrana/Text_Utility.git/','_blank')">Github</button>
+        <button class="btnUG" onClick="window.open('https://github.com/aniketttrana/Text_Utility.git/','_blank')">Github</button>
         
-        <button class="btnL" onClick="window.open('https://aniketttrana.github.io/Text_Utility/','_blank')">Live</button>
+        <button class="btnUL" onClick="window.open('https://aniketttrana.github.io/Text_Utility/','_blank')">Live</button>
 </div>
 
 <!-- next card -->
 <div class="training-items">
     <img src="news.png" alt="image">
     <h3>NewsMunch</h3>
-    <p>Users can see various news such as politics , technology , entertainment news</p>
+    <p>Users can see various news such as politics , technology , entertainment news,General News.This project is created using React</p>
     <button class="btnG">Github</button>
         <button class="btnL">Live</button>
 </div>
@@ -605,11 +646,12 @@ footer .footer-text-center{
 </div>
 
 </div>
+</section>
 <!-- Third Section Complete -->
 
 <hr>
 <!-- ForthSection Started -->
-
+<section id="Skills">
 <div class="forthSection">
   <div class="inner">
     <div class="header">
@@ -656,9 +698,13 @@ footer .footer-text-center{
 
 <!-- next skill -->
   </div>
+
+  </section>
 <!-- Forth Section Completed -->
 <hr>
 <!-- fifth section start -->
+
+<section id="Profiles">
 <div class="fifthSection">
     <div class="inner">
       <div class="header">
@@ -668,7 +714,7 @@ footer .footer-text-center{
   <div class="container">
       <div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="gfg.png" class="skill-icon"></div>
   <h3>Geeks for Geeks</h3></div>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, est?</p>
+  <button class="btn" onClick="window.open('https://auth.geeksforgeeks.org/user/anikettrana/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user', '_blank')">Profile Link</button>
 </div>
 
 
@@ -676,62 +722,53 @@ footer .footer-text-center{
 
 <div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="leetcode.png" class="skill-icon"></div>
 <h3>Leetcode</h3></div>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, est?</p></div>
+<button class="btn" onClick="window.open('https://leetcode.com/aniketrana/', '_blank')">Profile Link</button>
 </div>
 <!-- next link -->
 <div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="hackkerrank.png" class="skill-icon"></div>
 <h3>HackkerRank</h3></div>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, est?</p></div>
+<button class="btn" onClick="window.open('https://www.hackerrank.com/aniket_12204874?hr_r=1', '_blank')">Profile Link</button>
 </div>
 <!-- next link -->
   </div>
-  
+</section>
 <!-- fifth section end -->
 
 
 </main>
 
 <!-- FOOTER SECTION START-->
+<section id="Footer">
 <footer>
     <div class="footer">
         <div class="footer-first">
             <h3>Aniket Rana Portfolio</h3>
+           
         </div>
         <div class="footer-second">
-<ul>
-    <li>Home</li>
-    <li>Home</li>
-    <li>Home</li>
-    <li>Home</li>
-</ul>
+<p>My name is Aniket Rana . I am from Himachal Pradesh</p>
         </div>
- <div class="footer-third">
-    <div class="footer-second">
-        <ul>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-        </ul>
-                </div>
-        </div>
+ 
 
-        <div class="footer-forth">
-            <div class="footer-second">
                 <ul>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                </ul>
+                    <li><a href="#Home">Home</a></li>
+                   
+                       <li><a href="#Education">Education</a></li>
+                       <li><a href="#Projects">Projects</a></li>
+                       <li><a href="#Skills">Skills</a></li>
+                       <li><a href="#Profiles">Profiles</a></li>
+                       <li><a href="#Footer">About</a></li>
+                       
+                   </ul>
                         </div>
         </div>
 
-    </div>
+    
     <div class="footer-text-center">
         Copyright &#169 www.aniketrana.com | All right reserved
     </div>
 </footer>
+</section>
 
 <!-- FOOTER SECTION END -->
 
