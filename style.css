@@ -9,6 +9,7 @@ body{
     background-color: rgb(0,0,33);
     font-family: 'Poppins' , sans-serif;
     color:white;
+
 }
 /* added */
 
@@ -134,6 +135,7 @@ margin: auto;
 /* giving this section height */
 height:110vh;
 /* height: auto; */
+
 }
 
 .secondSection h1{
@@ -204,6 +206,7 @@ margin: auto;
 height:110vh;
 /* height:auto; */
 padding-bottom: 50px;
+
 }
 
 /* Third Section css Start */
@@ -272,7 +275,7 @@ padding-bottom: 50px;
     max-width:95vw;
 margin: auto;
 /* giving this section height */
-height:110vh;
+height:135vh;
 /* height: auto; */
 /* padding-bottom: 50px; */
 }
@@ -378,7 +381,7 @@ background-color: blue;
     max-width:95vw;
 margin: auto;
 /* giving this section height */
-height: 80vh;
+height: 70vh;
 /* height: auto; */
 padding-bottom: 50px;
 }
@@ -451,9 +454,23 @@ footer ul li a{
   }
 
 } */
+/* adding queries */
+/* @media (max-width:1376px)  {
+.secondSection{
+    height:120vh;
+}
+.thirdSection{
+    height:120vh;
+}
+.forthSection{
+    height:120vh;
+}
 
-@media screen  and (max-width:1200px)  {
-  
+} */
+
+/* adding queries */
+/* @media screen  and (max-width:1200px)  { */
+  @media (max-width:1200px)  {
     .rightSection{
         width:321px !important;
     }
@@ -516,28 +533,49 @@ footer ul li a{
     padding: 0 5%;
   }
 
-/*  */
+
 
     .secondSection{
-        height: 285vh;
-        /* max-width: 86vw; */
+        height: 485vh;
+        max-width: 86vw;
         width:50%;
     }
     .thirdSection{
-       height: 285vh;
+       height: 410vh;
     }
-    .fifthSection{
+  .fifthSection{
        
    
-        height: 80vh;
+        height: 280vh;
        
         }
     .forthSection{
-        height: 198vh;
+        height: 560vh;
 
-    }
+    } 
    
 }
 
 
-    
+    /* @media (max-width:2560px)  {
+
+        .secondSection{
+            height:70vh;
+        }
+
+        .thirdSection{
+            height:70vh;
+        }
+
+         .forthSection{
+            height:90vh;
+        }
+        .fifthSection{
+            height:50vh;
+        }
+
+        .container{
+            text-align: center;
+            justify-content: center;
+        }
+    } */

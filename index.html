@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY PORTFOLIO WEBSITE</title>
-
+    <link rel="stylesheet" href="style.css">
 
     <!-- font awesome cdn link for icons -->
 
@@ -18,613 +18,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&family=REM:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 
     <!-- added google fonts -->
-
-    <link rel="stylesheet" href="index.css">
-    <style>
-
-        /* navbar css start */
-        *{
-            margin:0;
-            padding:0;
-        }
-body{
-    background-color: rgb(0,0,33);
-    font-family: 'Poppins' , sans-serif;
-    color:white;
-}
-/* added */
-
-/* added */
-nav{
-    display:flex;    
-    justify-content: space-around;
-    align-items: center;
-    height:100px;
-    background-color:rgb(10, 10, 90);
-}
-nav ul{
-    display: flex;
-    justify-content: center;   
-}
-nav ul li{
-    list-style: none;
-    margin:0 24px;
-   
-}
-nav ul li a{
-   text-decoration: none;
-   color: white;
-}
-nav ul li a:hover{
- color: lightgray;
- font-size: 1.1rem;
-}
-.left{
-    font-size: 1.4rem;
-}
-
-
-/* navbar css done */
-
-/* firstSection css started */
-
-.firstSection{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    margin:80px 0;
-  
-}
-.fa-brands{
-    margin-left: 15px;
-    cursor: pointer;
-}
-.fa-brands:hover{
-  box-shadow: 0 0 5px  cyan,
-  0 0 25px cyan, 0 0 50px  cyan,
-  0 0 100px cyan, 0 0 200px cyan;
-}
-.fa-instagram{
-    color:#E4405F;
-}
-.fa-github{
-    color:white;
-}
-.fa-linkedin{
-    color:#0e76a8 ;
-}
-.leftSection a {
-    text-decoration: none;
-}
-
-.firstSection >div{
-    /* only first div will get 30% */
-width:45%;
-}
-
-.leftSection{
-    /* background-color: brown; */
-    font-size: 3.1rem;
-   
-}
-.leftSection .buttons,.fifthSection .btn  {
-    padding: 50px 0;
-}
-.leftSection .buttons .btn:hover{
-    box-shadow: 0 0 5px  cyan,
-  0 0 25px cyan, 0 0 50px  cyan,
-  0 0 100px cyan, 0 0 200px cyan;
-}
-.fifthSection .btn:hover{
-    box-shadow: 0 0 5px  cyan,
-  0 0 25px cyan, 0 0 50px  cyan,
-  0 0 100px cyan, 0 0 200px cyan;
-}
-.leftSection .btn,.fifthSection .btn{
-    padding:12px;
-    background-color: #1e2167;
-    border: 2px solid white;
-    border-radius: 6px;
-    cursor:pointer;
-    color:white;
-    font-size: 20px;
-}
-
-
-.rightSection img{
- 
-    width:80%;
-   
-}
-.purple{
-    color: rgb(216, 21, 216);
-}
-
-#element{
-    color:  rgb(216, 21, 216);
-}
-/* firstSection css done */
-
-
-
-
-/* secondSection css started */
-
-.secondSection{
-max-width:95vw;
-margin: auto;
-/* giving this section height */
-height:110vh;
-/* height: auto; */
-}
-
-.secondSection h1{
-    font-size: 1.9rem;
-}
-.date {
-    white-space: nowrap;
-    color:#9b66f1;
-}
-
-.purple1{
-    color: rgb(216, 21, 216);
-    font-size: 17px;
-}
-
-.text-grey{
-    color:grey;
-}
-.secondSection .box{
-background: white;
-width:77vw;
-height:2px;
-margin: 56px 0;
-display: flex;
-}
-
-
-.secondSection .vertical{
-    height:93px;
-    width:1px;
-    background-color: rgb(6, 177, 120);
-  margin:0 8vw;
-}
-
-
-
-.image-top{
-    width:30px;
-    position:relative;
-    /* so that we can change it to up right */
-    top:-32px;
-    left:-9px;
-}
-.vertical-title{
-position: relative;
-top: -12px;
-width:150px;
-font-size: 24px;
-}
-.vertical-desc{
-    position: relative;
-top:-25px;
-width:150px;
-font-size: 20px;
-color:grey;
-}
-/* secondSection css completed */
-
-/* thirdSection css start */
-
-/* thirdSection css complete */
-.thirdSection{
-max-width:95vw;
-margin: auto;
-/* giving this section height */
-height:110vh;
-/* height:auto; */
-padding-bottom: 50px;
-}
-
-/* Third Section css Start */
-.thirdSection h1{
-    font-size: 1.9rem;
-}
-
-.container{
-    width:1170px;
-    /* margin:auto; */
-    margin-top: 30px;
-   gap: 30px;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* next elements will come below */
-    justify-content: space-around;
-   
-}
-.thirdSection img {
-    height:130px;
-    width:130px;
-}
-.training-items{
-    flex-basis: 23%;
-    width: 250px; /* Set a fixed width for the cards */
-    height: 400px; /* Set a fixed height for the cards */
-    margin: 10px; /* Add margin for spacing */
-    margin:31px 0;
-    background-color: #181123;
-    box-shadow: 0px 0px 10px 3px lightgray;
-    text-align: center;
-    padding:28px 0;
-}
-
-.training-items h3{
-    padding:10px 0;
-}
-.training-items p{
-   font-size: 14px;
-   padding:10px;
-}
-.training-items button{
-    padding:10px 15px;
-    background-color: #26263b;
-    border: 2px solid white;
-    border-radius: 6px;
-    cursor:pointer;
-    color:white;
-    font-size: 20px;
-    margin:5px 0;
-    padding: 10px 20px;
-    margin-left: 20px;
- 
-}
-
-
-
- .training-items:hover h3{
-    font-size: 2.1rem;
-  
-} 
-
-/* FOrthSection css start */
-.forthSection{
-    max-width:95vw;
-margin: auto;
-/* giving this section height */
-height:110vh;
-/* height: auto; */
-/* padding-bottom: 50px; */
-}
- 
-    .inner{
-padding-top: 20px;
-    }
-.header{
-    text-align: center;
-    color: #0e76a8;
-    padding: 1rem;
-    position: relative;
-    
-}
-.header:after{
-    /* after header line effect */
-content: '';
-position: absolute;
-bottom: 0;
-left: 50%;
-transform: translateX(-50%);
-height: 4px;
-width: 100px;
-background-color: blue;
-
-}
-
-
-.container{
-    padding: auto;
-    grid-template-columns: repeat(3,1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1 rem 80px;
-    font-size: 1.2rem;
-   
-}
-.skill-box{
-    flex: 0 0 calc(25% - 20px); 
-    padding: 1rem;
- 
-    color: aqua;
-    cursor: pointer;
-    margin:10px;
-    align-items: center;
-}
-.skill-title{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    position: relative;
-    
-
-}
-.skill-title:after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-   right: 50%;
-   width: 35px;
-   height: 4px;
-   border-radius: 2px 0 0 2px;
-   background-color: #1e2167;
-
-
-
-}
-.skill-title:before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-   left: 50%;
-   width: 35px;
-   height: 4px;
-   border-radius: 0 2px 2px 0;
-   background-color: #1e2167;
-   
-}
-
-
-.skill-title h3{
-    color: #26263b;
-    margin: 0.5rem;
-    
-}
-
-.skill-icon{
-    width: 86px;
-   
-}
-
-
-
-/* Forth Section css end */
-
-
-/* fifth section css start */
-.fifthSection{
-    max-width:95vw;
-margin: auto;
-/* giving this section height */
-height: 80vh;
-/* height: auto; */
-padding-bottom: 50px;
-}
-
-/* fifth section css end */
-
-
-/* footer css start */
-
-footer{
-    background-color: #181123;
-   
-   
-}
-.footer {
-    display:flex;
-    padding:50px 30px;
-    justify-content: space-evenly;
-    background-color: #181123;
-   
-   position: relative;
-    
-}
-
-.footer h3{
-    left:-121px;
-    font-size: 2.2rem;
-    position: relative;
-}
-.footer ul{
-    list-style: none;
-    font-size: 1.5rem;
-   
-
-}
-.footer p{
-    
-    font-size: 1.5rem;
-   
-
-}
-.footer >div{
-  
-    width:123px;
-    
-}
-
-footer .footer-text-center{
-   
-    color: grey;
-    padding:20px 0;
-    text-align: center;
-}
-footer ul li a{
-   text-decoration: none;
-   color: white;
-}
-/* footer css end */
-@media only screen and (min-width:200px) and (max-width:767px) {
-
-    .container{
-        width:100%;
-        flex-direction: column;
-    }
-    .training-items{
-        margin:10px;
-    }
-    .skills-area {
-    padding: 0 5%;
-  }
-
-}
-
-@media screen  and (max-width:1200px)  {
-  
-    .rightSection{
-        width:321px !important;
-    }
-    .firstSection{
-        flex-direction: column-reverse;
-        width:107%;
-    }
-    .footer h3{
-    left:-80px;
-    font-size: 2.2rem;
-    position: relative;
-}
-    /* .secondSection{
-        display: flex;
-        flex-direction: coloumn;
-        align-items: center;
-    } */
-    body{
-        min-width: fit-content;
-    }
-    .box{
-        flex-direction: column;
-    }
-    .secondSection .vertical{
-        height:unset;
-    }
-    .vertical-title{
-        left:60px;
-        margin-top: 20px;
-    }
-
-    .vertical-desc{
-        left:60px;
-        margin-top: 10px;
-    }
-   
-    .secondSection .box{
-        width:50vw;
-    }
-    nav{
-        flex-direction: column;
-    }
-
-.leftSection{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
-}
-/*  */
-.container{
-        width:100%;
-        flex-direction: column;
-    }
-    .training-items{
-        margin:10px;
-    }
-    .skills-area {
-    padding: 0 5%;
-  }
-
-/*  */
-
-    .secondSection{
-        height: 190vh;
-        /* max-width: 86vw; */
-        width:50%;
-    }
-    .thirdSection{
-       height: 150vh;
-    }
-    .forthSection{
-        height: 114vh;
-
-    }
-    .fifthSection{
-    height: 85vh;
-    
-    }
-}
-
-/*  */
-@media (max-width:360px){
-    .secondSection{
-        height:260vh;
-        /* height:auto; */
-    }
-    .thirdSection{
-        
-            height:210vh;
-    }
-    .forthSection{
-        height:185vh;
-    }
-    .fifthSection{
-        height:140vh;
-    }
-    .footer h3{
-        left:-55px;
-    }
-}
-
-
-/*  */
-
-@media (max-width: 600px) {
-    /* Mobiles */
-    .secondSection{
-        height:200vh;
-    }
-    .thirdSection{
-        
-            height:180vh;
-    }
-    .forthSection{
-        height:145vh;
-    }
-    .fifthSection{
-        height:111vh;
-    }
-    .footer h3{
-        left:-55px;
-    }
-}
-
-
-/*  */
-@media (min-width: 601px) and (max-width: 1200px) {
-    /* tablets */
-
-    .secondSection{
-        height:210vh;
-    }
-    .thirdSection{
-        
-            height:180vh;
-    }
-    .forthSection{
-        height:145vh;
-    }
-    .fifthSection{
-        height:111vh;
-    }
-    .footer h3{
-        left:-55px;
-    }
-}
-/*  */
-
-    </style>
 </head>
 <body>
     <header>
@@ -700,6 +93,13 @@ footer ul li a{
 <h1>My Education Details</h1>
 
 
+<!-- .firstSection{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:80px 0;
+  
+} -->
 
 
 <div class="box">
@@ -844,7 +244,7 @@ footer ul li a{
 <!-- next skill -->
 
     <div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="javascript.png" class="skill-icon"></div>
-<h3>Bootstrap</h3></div>
+<h3>javascript</h3></div>
 </div>
 
 <!-- next skill -->
@@ -852,7 +252,7 @@ footer ul li a{
 <!-- next skill -->
 
     <div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="express.png" class="skill-icon"></div>
-<h3>Javascript</h3></div>
+<h3>Express</h3></div>
 </div>
 
 <!-- next skill -->
@@ -861,6 +261,22 @@ footer ul li a{
 
     <div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="node.png" class="skill-icon"></div>
 <h3>Nodejs</h3></div>
+</div>
+
+
+
+<div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="mongo.png" class="skill-icon"></div>
+<h3>mongoDb</h3></div>
+</div>
+
+
+<div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="cpp.png" class="skill-icon"></div>
+<h3>Cpp</h3></div>
+</div>
+
+
+<div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="react.png" class="skill-icon"></div>
+<h3>ReactJs</h3></div>
 </div>
 
 <!-- next skill -->
