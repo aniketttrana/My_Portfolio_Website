@@ -133,10 +133,12 @@ width:45%;
 max-width:95vw;
 margin: auto;
 /* giving this section height */
+/* 
+height: auto; */
 height:110vh;
-/* height: auto; */
 
 }
+
 
 .secondSection h1{
     font-size: 1.9rem;
@@ -200,12 +202,16 @@ color:grey;
 
 /* thirdSection css complete */
 .thirdSection{
-max-width:95vw;
+/* max-width:95vw; */
 margin: auto;
 /* giving this section height */
-height:110vh;
-/* height:auto; */
-padding-bottom: 50px;
+height:auto;
+/* 
+padding-bottom: 50px; */
+/* width: 50%; */
+ /* Instead of a fixed pixel value */
+  /* margin: 0 auto;  */
+  /* Center the div horizontally */
 
 }
 
@@ -215,9 +221,11 @@ padding-bottom: 50px;
 }
 
 .container{
-    width:1170px;
+    /* width:1170px; */
+    width:90%;
     /* margin:auto; */
-    margin-top: 30px;
+    margin:auto;
+    /* margin-top: 30px; */
    gap: 30px;
     display:flex;
     flex-direction: row;
@@ -273,11 +281,12 @@ padding-bottom: 50px;
 /* FOrthSection css start */
 .forthSection{
     max-width:95vw;
-margin: auto;
-/* giving this section height */
-height:135vh;
-/* height: auto; */
+margin: 0 auto;
+
+height: auto;
+
 /* padding-bottom: 50px; */
+
 }
  
     .inner{
@@ -361,7 +370,7 @@ background-color: blue;
 
 
 .skill-title h3{
-    color: #26263b;
+    color: whitesmoke;
     margin: 0.5rem;
     
 }
@@ -381,8 +390,8 @@ background-color: blue;
     max-width:95vw;
 margin: auto;
 /* giving this section height */
-height: 70vh;
-/* height: auto; */
+
+height: auto;
 padding-bottom: 50px;
 }
 
@@ -494,9 +503,7 @@ footer ul li a{
     .box{
         flex-direction: column;
     }
-    .secondSection .vertical{
-        height:unset;
-    }
+    
     .vertical-title{
         left:60px;
         margin-top: 20px;
@@ -508,7 +515,15 @@ footer ul li a{
     }
    
     .secondSection .box{
-        width:50vw;
+        width:1vw;
+       
+      
+        
+    }
+    .secondSection .box{
+       height:auto;
+       width:0vw;
+        
     }
     nav{
         flex-direction: column;
@@ -533,26 +548,93 @@ footer ul li a{
     padding: 0 5%;
   }
 
+  /* .secondSection{ */
+    /* max-width:95vw; */
+    /* margin: auto; */
+    /* giving this section height */
+    /* height:auto; */
+    /* height: auto; */
+    
+    /* } */
 
-
-    .secondSection{
+    /* .secondSection{
         height: 485vh;
         max-width: 86vw;
         width:50%;
+    } */
+
+    .secondSection .vertical{
+        /* height:unset; */
+        height:auto;
+    }
+
+
+   
+    .secondSection{
+        max-width:40vh;
+        
+        /* margin:auto; */
+        height:auto;
+        /* display: flex; */
     }
     .thirdSection{
-       height: 410vh;
-    }
-  .fifthSection{
-       
-   
-        height: 280vh;
-       
+        max-width:95vw;
+        height:auto;
+        /* height:auto; */
+        /* padding-bottom: 50px; */
+        width: 50%; /* Instead of a fixed pixel value */
+          margin: 0 auto; /* Center the div horizontally */
+        
         }
-    .forthSection{
-        height: 560vh;
+  
 
-    } 
+        .fifthSection{
+            max-width:95vw;
+        margin: auto;
+        /* giving this section height */
+        height: auto;
+        /* height: auto; */
+        padding-bottom: 50px;
+        }
+
+
+    .forthSection{
+        max-width:95vw;
+    margin: 0 auto;
+    /* giving this section height */
+    height:auto;
+    /* height: auto; */
+    /* padding-bottom: 50px; */
+    
+    }
+
+    nav ul li a:hover{
+        color: lightgray;
+        font-size: 1.1rem;
+       }
+       
+       .fa-brands:hover{
+         box-shadow: 0 0 5px  cyan,
+         0 0 25px cyan, 0 0 50px  cyan,
+         0 0 100px cyan, 0 0 200px cyan;
+       }
+       .leftSection .buttons .btn:hover{
+           box-shadow: 0 0 5px  cyan,
+         0 0 25px cyan, 0 0 50px  cyan,
+         0 0 100px cyan, 0 0 200px cyan;
+       }
+       .fifthSection .btn:hover{
+           box-shadow: 0 0 5px  cyan,
+         0 0 25px cyan, 0 0 50px  cyan,
+         0 0 100px cyan, 0 0 200px cyan;
+       }
+       
+       
+       
+        .training-items:hover h3{
+           font-size: 2.1rem;
+         
+       } 
    
 }
 
