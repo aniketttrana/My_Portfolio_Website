@@ -132,14 +132,8 @@ width:45%;
 .secondSection{
 max-width:95vw;
 margin: auto;
-/* giving this section height */
-/* 
-height: auto; */
 height:110vh;
-
 }
-
-
 .secondSection h1{
     font-size: 1.9rem;
 }
@@ -169,11 +163,8 @@ display: flex;
     height:93px;
     width:1px;
     background-color: rgb(6, 177, 120);
-  margin:0 8vw;
+    margin:0 8vw;
 }
-
-
-
 .image-top{
     width:30px;
     position:relative;
@@ -191,10 +182,10 @@ font-size: 24px;
 .vertical-desc{
     position: relative;
     left:10px;
-top:0px;
-width:150px;
-font-size: 20px;
-color:grey;
+    top:0px;
+    width:150px;
+    font-size: 20px;
+    color:grey;
 }
 /* secondSection css completed */
 
@@ -202,17 +193,9 @@ color:grey;
 
 /* thirdSection css complete */
 .thirdSection{
-/* max-width:95vw; */
 margin: auto;
 /* giving this section height */
 height:auto;
-/* 
-padding-bottom: 50px; */
-/* width: 50%; */
- /* Instead of a fixed pixel value */
-  /* margin: 0 auto;  */
-  /* Center the div horizontally */
-
 }
 
 /* Third Section css Start */
@@ -221,19 +204,16 @@ padding-bottom: 50px; */
 }
 
 .container{
-    /* width:1170px; */
     width:90%;
-    /* margin:auto; */
     margin:auto;
-    /* margin-top: 30px; */
-   gap: 30px;
+    gap: 30px;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     /* next elements will come below */
-    justify-content: space-around;
-   
+    justify-content: space-around;   
 }
+
 .thirdSection img {
     height:130px;
     width:130px;
@@ -271,27 +251,21 @@ padding-bottom: 50px; */
  
 }
 
-
-
- .training-items:hover h3{
-    font-size: 2.1rem;
-  
+.training-items:hover h3{
+    font-size: 2.1rem;  
 } 
 
 /* FOrthSection css start */
 .forthSection{
     max-width:95vw;
-margin: 0 auto;
-
-height: auto;
-
-/* padding-bottom: 50px; */
-
+    margin: 0 auto;
+    height: auto;
 }
  
-    .inner{
-padding-top: 20px;
-    }
+.inner{
+    padding-top: 20px;
+}
+
 .header{
     text-align: center;
     color: #0e76a8;
@@ -309,10 +283,7 @@ transform: translateX(-50%);
 height: 4px;
 width: 100px;
 background-color: blue;
-
 }
-
-
 .container{
     padding: auto;
     grid-template-columns: repeat(3,1fr);
@@ -320,41 +291,34 @@ background-color: blue;
     align-items: center;
     text-align: center;
     padding: 1 rem 80px;
-    font-size: 1.2rem;
-   
+    font-size: 1.2rem;  
 }
 .skill-box{
     flex: 0 0 calc(25% - 20px); 
     padding: 1rem;
- 
     color: aqua;
     cursor: pointer;
     margin:10px;
     align-items: center;
 }
 .skill-title{
-
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
     position: relative;
-    
-
 }
+
 .skill-title:after{
     content: '';
     position: absolute;
     bottom: 0;
-   right: 50%;
-   width: 35px;
-   height: 4px;
-   border-radius: 2px 0 0 2px;
-   background-color: #1e2167;
-
-
-
+    right: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #1e2167;
 }
 .skill-title:before{
     content: '';
@@ -365,22 +329,15 @@ background-color: blue;
    height: 4px;
    border-radius: 0 2px 2px 0;
    background-color: #1e2167;
-   
 }
-
-
 .skill-title h3{
     color: whitesmoke;
-    margin: 0.5rem;
-    
+    margin: 0.5rem;   
 }
-
 .skill-icon{
     width: 86px;
    
 }
-
-
 
 /* Forth Section css end */
 
@@ -388,11 +345,11 @@ background-color: blue;
 /* fifth section css start */
 .fifthSection{
     max-width:95vw;
-margin: auto;
+    margin: auto;
 /* giving this section height */
 
-height: auto;
-padding-bottom: 50px;
+    height: auto;
+    padding-bottom: 50px;
 }
 
 /* fifth section css end */
@@ -402,19 +359,14 @@ padding-bottom: 50px;
 
 footer{
     background-color: #181123;
-   
-   
 }
 .footer {
     display:flex;
     padding:50px 30px;
     justify-content: space-evenly;
     background-color: #181123;
-   
-   position: relative;
-    
+    position: relative;
 }
-
 .footer h3{
     left:-121px;
     font-size: 2.2rem;
@@ -423,23 +375,15 @@ footer{
 .footer ul{
     list-style: none;
     font-size: 1.5rem;
-   
-
 }
 .footer p{
-    
     font-size: 1.5rem;
-   
-
 }
+
 .footer >div{
-  
-    width:123px;
-    
+    width:123px;    
 }
-
 footer .footer-text-center{
-   
     color: grey;
     padding:20px 0;
     text-align: center;
@@ -449,36 +393,9 @@ footer ul li a{
    color: white;
 }
 /* footer css end */
-/* @media only screen and (min-width:200px) and (max-width:767px) {
 
-    .container{
-        width:100%;
-        flex-direction: column;
-    }
-    .training-items{
-        margin:10px;
-    }
-    .skills-area {
-    padding: 0 5%;
-  }
-
-} */
-/* adding queries */
-/* @media (max-width:1376px)  {
-.secondSection{
-    height:120vh;
-}
-.thirdSection{
-    height:120vh;
-}
-.forthSection{
-    height:120vh;
-}
-
-} */
 
 /* adding queries */
-/* @media screen  and (max-width:1200px)  { */
   @media (max-width:1200px)  {
     .rightSection{
         width:321px !important;
@@ -492,11 +409,6 @@ footer ul li a{
     font-size: 2.2rem;
     position: relative;
 }
-    /* .secondSection{
-        display: flex;
-        flex-direction: coloumn;
-        align-items: center;
-    } */
     body{
         min-width: fit-content;
     }
@@ -508,35 +420,26 @@ footer ul li a{
         left:60px;
         margin-top: 20px;
     }
-
     .vertical-desc{
         left:60px;
         margin-top: 10px;
     }
-   
     .secondSection .box{
-        width:1vw;
-       
-      
-        
+        width:1vw;       
     }
     .secondSection .box{
        height:auto;
        width:0vw;
-        
     }
     nav{
         flex-direction: column;
     }
-
 .leftSection{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-   
+    justify-content: center;  
 }
-/*  */
 .container{
         width:100%;
         flex-direction: column;
@@ -547,72 +450,35 @@ footer ul li a{
     .skills-area {
     padding: 0 5%;
   }
-
-  /* .secondSection{ */
-    /* max-width:95vw; */
-    /* margin: auto; */
-    /* giving this section height */
-    /* height:auto; */
-    /* height: auto; */
-    
-    /* } */
-
-    /* .secondSection{
-        height: 485vh;
-        max-width: 86vw;
-        width:50%;
-    } */
-
     .secondSection .vertical{
-        /* height:unset; */
         height:auto;
     }
-
-
-   
     .secondSection{
         max-width:40vh;
-        
-        /* margin:auto; */
         height:auto;
-        /* display: flex; */
     }
     .thirdSection{
         max-width:95vw;
         height:auto;
-        /* height:auto; */
-        /* padding-bottom: 50px; */
-        width: 50%; /* Instead of a fixed pixel value */
-          margin: 0 auto; /* Center the div horizontally */
-        
-        }
-  
-
-        .fifthSection{
-            max-width:95vw;
-        margin: auto;
-        /* giving this section height */
-        height: auto;
-        /* height: auto; */
-        padding-bottom: 50px;
+        width: 50%; 
+        margin: 0 auto;
         }
 
-
-    .forthSection{
+    .fifthSection{
         max-width:95vw;
-    margin: 0 auto;
-    /* giving this section height */
-    height:auto;
-    /* height: auto; */
-    /* padding-bottom: 50px; */
-    
+        margin: auto;
+        height: auto;
+        padding-bottom: 50px;
     }
-
+    .forthSection{
+    max-width:95vw;
+    margin: 0 auto;
+    height:auto;
+    }
     nav ul li a:hover{
         color: lightgray;
         font-size: 1.1rem;
        }
-       
        .fa-brands:hover{
          box-shadow: 0 0 5px  cyan,
          0 0 25px cyan, 0 0 50px  cyan,
@@ -628,36 +494,7 @@ footer ul li a{
          0 0 25px cyan, 0 0 50px  cyan,
          0 0 100px cyan, 0 0 200px cyan;
        }
-       
-       
-       
         .training-items:hover h3{
-           font-size: 2.1rem;
-         
+           font-size: 2.1rem; 
        } 
-   
 }
-
-
-    /* @media (max-width:2560px)  {
-
-        .secondSection{
-            height:70vh;
-        }
-
-        .thirdSection{
-            height:70vh;
-        }
-
-         .forthSection{
-            height:90vh;
-        }
-        .fifthSection{
-            height:50vh;
-        }
-
-        .container{
-            text-align: center;
-            justify-content: center;
-        }
-    } */

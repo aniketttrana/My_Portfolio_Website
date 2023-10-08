@@ -18,6 +18,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&family=REM:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 
     <!-- added google fonts -->
+
+    <!-- adding scroll from scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- added -->
 </head>
 <body>
     <header>
@@ -57,9 +62,7 @@
                 <button class="btn" onClick="window.open('https://github.com/aniketttrana/', '_blank')">Visit GitHub</button>
                </div>
                <!-- added font awesome cdn -->
-               <!-- <i class="fa-brands fa-linkedin"></i>
-               <i class="fa-brands fa-instagram"></i>
-               <i class="fa-brands fa-github"></i> -->
+              
                <a href="https://www.linkedin.com/in/anikettrana" target="_blank">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
@@ -79,28 +82,12 @@
            
         </section>
 <hr>
-
-
 </section>
 <!-- secondSection started-->
-
 <section id="Education">
-
-
 <div class="secondSection">
-
 <span class="text-grey">Here is my education details</span>
 <h1>My Education Details</h1>
-
-
-<!-- .firstSection{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    margin:80px 0;
-  
-} -->
-
 
 <div class="box">
     <!-- FIRST PROJECT -->
@@ -193,11 +180,11 @@
 <div class="training-items">
    
      <img src="textutility.png" alt="image">
-        <h3>Text-Utility</h3>
+        <h3>Text-Analyzer</h3>
         <p>Users can change text to Uppercase lower case, can remove special characters , can listen to their text , see their speed of reading!</p>
-        <button class="btnUG" onClick="window.open('https://github.com/aniketttrana/Text_Utility.git/','_blank')">Github</button>
+        <button class="btnUG" onClick="window.open('https://github.com/aniketttrana/Text_Analyzer.git/','_blank')">Github</button>
         
-        <button class="btnUL" onClick="window.open('https://aniketttrana.github.io/Text_Utility/','_blank')">Live</button>
+        <button class="btnUL" onClick="window.open('https://aniketttrana.github.io/Text_Analyzer/','_blank')">Live</button>
 </div>
 
 <!-- next card -->
@@ -205,9 +192,9 @@
     <img src="news.png" alt="image">
     <h3>NewsMunch</h3>
     <p>Users can see various news such as politics , technology , entertainment news,General News.This project is created using React</p>
-    <button class="btnG">Github</button>
-        <button class="btnL">Live</button>
-</div>
+    <button class="btnG" onClick="window.open('https://github.com/aniketttrana/NewsMunch','_blank')">Github</button>
+        
+    <button class="btnUL" onClick="window.alert('Only open in Local host , Cant use in Production because the API is paid')">Live</button>
 
 <!-- next card -->
 </div>
@@ -228,9 +215,6 @@
     <div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="html.png" class="skill-icon"></div>
 <h3>HTML 5</h3></div>
 </div>
-
-
-
 
 
 <!-- next skill -->
@@ -263,12 +247,9 @@
 <h3>Nodejs</h3></div>
 </div>
 
-
-
 <div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="mongo.png" class="skill-icon"></div>
 <h3>mongoDb</h3></div>
 </div>
-
 
 <div class="skill-box"><div class="skill-title"><div class="imgHtml"><img src="cpp.png" class="skill-icon"></div>
 <h3>Cpp</h3></div>
@@ -326,12 +307,10 @@
     <div class="footer">
         <div class="footer-first">
             <h3>Aniket Rana Portfolio</h3>
-           
         </div>
         <div class="footer-second">
 <p>My name is Aniket Rana . I am from Himachal Pradesh</p>
         </div>
- 
                 <ul>
                     
                     <li><a href="#Home">Home</a></li>
@@ -370,9 +349,24 @@
           strings: ['Web Developer', 'Front-end Developer','Full-Stack Web Developer'],
           typeSpeed: 50,
         });
+
+
+// Typerscript animation
+        ScrollReveal({ reset: true ,
+        distance:'50px',
+        duration:1700,
+        delay:300
+        });
+
+ScrollReveal().reveal('.thirdSection h1');
+ScrollReveal().reveal('.container', { delay:400 ,origin:'left'});
+ScrollReveal().reveal('.thirdSection img', { delay: 1000 ,origin:'right' });
+ScrollReveal().reveal('.forthSection', { delay: 1000 ,origin:'right' });
+ScrollReveal().reveal('.firstSection', { delay: 500 ,origin:'right' });
+ScrollReveal().reveal('.secondSection', { delay: 1000 ,origin:'right' });
       </script>
 
-<!-- Typescript animation -->
+
  
 </body>
 </html>
